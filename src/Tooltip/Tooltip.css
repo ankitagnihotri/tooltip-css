@@ -1,0 +1,40 @@
+/**
+ * @Author: ankit
+ * @Date:   2019-04-01T14:42:03+05:30
+ * @Email:  ankit@minance.com
+ * @Last modified by:   ankit
+ * @Last modified time: 2019-04-01T16:01:42+05:30
+ * @Copyright: Minance Technologies Private Limited
+ */
+.CustomTooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.TooltipText {
+  visibility: hidden;
+  background-color: #e7b770;
+  text-align: center;
+  border-radius: 6px;
+  min-width: 120px;
+  max-width: 280px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  line-height: 1.14;
+}
+
+.TooltipText::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #e7b770 transparent transparent;
+}
+
+.CustomTooltip:hover .TooltipText {
+  visibility: visible;
+}
