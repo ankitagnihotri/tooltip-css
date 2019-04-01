@@ -18,21 +18,79 @@
   border-radius: 6px;
   min-width: 120px;
   max-width: 280px;
-  padding: 5px 5px;
-  position: absolute;
-  z-index: 1;
+  z-index: 10;
   line-height: 1.14;
 }
-
 .TooltipText::after {
   content: " ";
   position: absolute;
+}
+
+.TooltipText-right {
+  padding: 5px 5px;
+  position: absolute;
+  top: -5px;
+  left: 110%;
+}
+
+.TooltipText-right::after {
   top: 50%;
   right: 100%; /* To the left of the tooltip */
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent #e7b770 transparent transparent;
+}
+
+
+.TooltipText-left {
+  padding: 5px 0;
+  position: absolute;
+  top: -5px;
+  right: 110%;
+}
+
+.TooltipText-left::after {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #e7b770;
+}
+
+.TooltipText-top {
+  padding: 5px 0;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.TooltipText-top::after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e7b770 transparent transparent transparent;
+}
+
+.TooltipText-bottom {
+  padding: 5px 0;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.TooltipText-bottom::after {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #e7b770 transparent;
 }
 
 .CustomTooltip:hover .TooltipText {

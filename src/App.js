@@ -9,6 +9,7 @@
 
 import React, { Component } from 'react';
 import Tooltip from './Tooltip';
+import './App.css';
 
 let customStyleTooltip = {
   backgroundColor: '#e7b770',
@@ -17,11 +18,35 @@ let customStyleTooltip = {
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{margin:'100px'}}>
-      <Tooltip hoverComponent={<button>Right</button>}
-               hoverText={"React Toolpit"}
-               style={customStyleTooltip}
-              />
+      <div className="App">
+        <div>
+          <Tooltip hoverComponent={<button>Right</button>}
+                hoverText={"React Toolpit"}
+                position={'right'}
+                style={customStyleTooltip}
+                />
+        </div>
+        <div>
+          <Tooltip hoverComponent={<button>Left</button>}
+                hoverText={"React Toolpit"}
+                position={'left'}
+                style={customStyleTooltip}
+                />
+        </div>
+        <div>
+          <Tooltip hoverComponent={<button>Top</button>}
+                hoverText={"React Toolpit"}
+                position={'top'}
+                style={customStyleTooltip}
+                />
+        </div>
+        <div>
+          <Tooltip hoverComponent={<button>Bottom</button>}
+                hoverText={"React Toolpit"}
+                position={'bottom'}
+                style={customStyleTooltip}
+                />
+        </div>
       </div>
     );
   }

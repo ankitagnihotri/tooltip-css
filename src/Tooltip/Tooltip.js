@@ -14,7 +14,9 @@
    return (
      <div className="CustomTooltip">
        {props.hoverComponent}
-       <span className="TooltipText" style={props.style}>{props.hoverText}</span>
+      <span className={`TooltipText TooltipText-${props.position}`} 
+            style={props.style}>{props.hoverText}
+      </span>
      </div>
    );
  };
