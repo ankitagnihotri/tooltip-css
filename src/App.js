@@ -20,32 +20,32 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <Tooltip hoverComponent={<button>Right</button>}
-                hoverText={"React Toolpit"}
-                position={'right'}
-                style={customStyleTooltip}
-                />
+          <Tooltip hoverComponent={<button>Right Tooltip</button>}
+                   hoverText={"React Toolpit"}
+                   position={'right'}
+                   style={customStyleTooltip}
+          />
         </div>
         <div>
-          <Tooltip hoverComponent={<button>Left</button>}
-                hoverText={"React Toolpit"}
-                position={'left'}
-                style={customStyleTooltip}
-                />
+          <Tooltip hoverComponent={<button>Left Tooltip</button>}
+                   hoverText={"React Toolpit"}
+                   position={'left'}
+                   style={customStyleTooltip}
+          />
         </div>
         <div>
-          <Tooltip hoverComponent={<button>Top</button>}
-                hoverText={"React Toolpit"}
-                position={'top'}
-                style={customStyleTooltip}
-                />
+          <Tooltip hoverComponent={<button>Top Tooltip</button>}
+                   hoverText={"React Toolpit"}
+                   position={'top'}
+                   style={customStyleTooltip}
+          />
         </div>
         <div>
-          <Tooltip hoverComponent={<button>Bottom</button>}
-                hoverText={"React Toolpit"}
-                position={'bottom'}
-                style={customStyleTooltip}
-                />
+          <Tooltip hoverComponent={<button>Bottom Tooltip</button>}
+                   hoverText={"React Toolpit"}
+                   position={'bottom'}
+                   style={customStyleTooltip}
+          />
         </div>
       </div>
     );
